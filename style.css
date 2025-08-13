@@ -41,60 +41,114 @@ svg {
 	max-width: 100%;
 }
 
-/* -----------reset end------------ */
+a {
+	color: #0d3c40;
+	text-decoration: none;
+	border-bottom: 1px solid #0d2c40;
+}
 
-/* Main */
+a:hover {
+	color: rgba(0, 0, 0, 0.4);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
 body {
 	background-color: #f6efe5;
 	font-family: 'Noto Sans Georgian', sans-serif;
 }
 
-#zen-intro {
+/* -----------reset end------------ */
+
+/* Main */
+.page-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 120em;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
 	display: flex;
-	background-color: #c879b2;
-	height: 100vh;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
-header {
+.intro {
+	overflow: hidden;
+	background: #c879b2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.intro header {
 	display: flex;
-	padding: 50px;
-	height: 100%;
-	width: 20%;
+	justify-content: space-around;
+	position: relative;
+	background: #c879b2;
+	width: 100%;
+	height: 50em;
+	left: 0;
 }
 
 .intro header h1 {
 	position: absolute;
+	top: 1.2rem;
+	left: -6.5rem;
 	font-size: 16px;
 	color: #ffffff;
-	width: auto;
-	top: 4.2em;
-	left: -3em;
+	width: 50%;
+	margin: 0 2rem 0 0;
 	padding: 1em;
 	transform: rotate(-90deg);
 }
 
 .intro header h2 {
 	position: relative;
+	left: 4.5rem;
 	background-color: #0d2c40;
 	background-image: url(/images/icon-star.svg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position-x: left;
 	background-position-y: bottom;
-	height: 20em;
+	height: 19.4em;
 	color: #ffffff;
-	padding: 6em 0.5em 0 0.5em;
+	margin: 0;
+	padding: 5em 0.5em 0 0.5em;
+	width: 43%;
+	font-size: 39px;
 }
 
 .intro .summary {
+	position: relative;
+	left: -5.2rem;
+	top: -2.73rem;
 	color: #ffffff;
-	width: 60%;
+	width: 116%;
 	background-image: url(/images/icons-3-pack.svg);
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: bottom;
 	background-color: #c879b2;
-	background-size: 100%;
+	background-size: contain;
 	height: 50em;
+	margin: 0;
 	padding: 16em 2em 10em 2em;
 }
+
+.intro .summary p {
+	width: 80%;
+	margin: 10px 0;
+	margin-top: 40px;
+}
+
+.intro .summary a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
+.intro .summary a:hover {
+	color: rgba(0, 0, 0, 0.4);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	transition: ease-in 0.1s;
+} 
