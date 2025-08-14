@@ -99,7 +99,6 @@ body {
 	transform: rotate(-90deg);
 }
 
-
 .intro header h2 {
 	position: relative;
 	left: 4.5rem;
@@ -190,12 +189,13 @@ body {
 	padding: 11.5em 1em 20em 1em;
 	top: -2.8rem;
 	right: 0;
+	height: 46rem;
 }
 
 .main {
 	background-image: url(/images/mid-century-1.jpg);
 	background-repeat: no-repeat;
-	background-position:top;
+	background-position: top;
 	background-size: contain;
 	z-index: 1;
 	position: relative;
@@ -236,9 +236,9 @@ body {
 	position: relative;
 	background-color: #f6efe5;
 	color: #0d2c40;
-	width: 30%;
+	width: 42.4%;
 	height: 38rem;
-	padding: 40px 10px;
+	padding: 40px 15px;
 	top: 10rem;
 	left: 17rem;
 }
@@ -246,9 +246,65 @@ body {
 .participation h3 {
 	font-size: 24px;
 	margin-bottom: 1.3rem;
-}	
+}
 .participation p {
 	font-size: 16px;
 	line-height: 1.6rem;
 	margin-bottom: 1rem;
+}
+
+.benefits {
+	position: relative;
+	background-color: rgba(0, 188, 217, 0.8);
+	background-image: url(/images/icon-circles.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top;
+	color: #0d2c40;
+	width: 20%;
+	height: 70rem;
+	padding: 40px 10px;
+	top: -39rem;
+	right: -57rem;
+}
+
+.benefits h3 {
+	margin-top: 20rem;
+	margin-bottom: 2rem;
+	font-size: 24px;
+}
+
+.benefits p {
+	font-size: 16px;
+	line-height: 1.6rem;
+}
+
+.requirements {
+	position: absolute;
+	background-image: url(/images/mid-century-2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: left;
+	background-position-y: center;
+	height: 40rem;
+	top: 100rem;
+}
+
+.requirements h3 {
+	position: absolute;
+	z-index: 3;
+	font-size: 300%;
+	line-height: 2em;
+	top: 5rem;
+	left: 10rem;
+	margin: 0;
+	padding: 1em;
+	transform: rotate(-90deg);
+	color: #0d2c40;
+}
+
+.requirements p {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	
 }
