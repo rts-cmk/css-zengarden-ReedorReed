@@ -283,11 +283,13 @@ body {
 	position: absolute;
 	background-image: url(/images/mid-century-2.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-position-x: left;
 	background-position-y: center;
-	height: 40rem;
+	height: 50rem;
 	top: 100rem;
+	width: 40%;
+	margin-left: 2rem;
 }
 
 .requirements h3 {
@@ -295,8 +297,8 @@ body {
 	z-index: 3;
 	font-size: 300%;
 	line-height: 2em;
-	top: 5rem;
-	left: 10rem;
+	top: 0rem;
+	left: 14rem;
 	margin: 0;
 	padding: 1em;
 	transform: rotate(-90deg);
@@ -304,7 +306,20 @@ body {
 }
 
 .requirements p {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	
+	position: relative;
+	left: 30rem;
+	margin: 4rem 0;
+}
+
+footer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	margin-left: 2rem;
+	top: -100rem;
+}
+
+footer a, a:hover {
+	border-bottom: none;
 }
